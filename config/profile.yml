@@ -1,0 +1,64 @@
+# ============================================================
+# 个人信息 - 请填写您的真实信息
+# ============================================================
+researcher:
+  name: "[Your Name]"                          # 您的姓名，如 Zhang San
+  email: "[your.email@university.edu]"         # 您的学术邮箱
+  university: "[Your University]"              # 就读学校，如 Peking University
+  department: "[Department]"                   # 系所，如 School of Computer Science
+  homepage: "[https://yourwebsite.com]"        # 个人主页（没有可留空）
+  phd_year: "[Expected graduation: 2026]"      # 博士毕业时间
+
+# ============================================================
+# 研究方向画像 - 用于AI筛选和邮件生成
+# ============================================================
+research_profile:
+  primary_areas:
+    - edge computing
+    - mobile edge computing
+    - on-device AI inference
+    - edge AI systems
+    - resource-constrained computing
+
+  secondary_areas:
+    - AI agents
+    - autonomous agents
+    - large language model inference
+    - agentic AI systems
+
+  crossover_interests:
+    - cognitive science
+    - computational neuroscience
+    - brain-computer interface
+    - human-AI interaction
+
+  representative_papers:
+    - "[Paper Title 1], [Venue 1], [Year]"   # 如 Efficient Edge Inference, MobiSys 2025
+    - "[Paper Title 2], [Venue 2], [Year]"
+    # 可继续添加
+
+  skills:
+    - "model compression and quantization"
+    - "latency-aware scheduling"
+    - "edge-cloud task offloading"
+    - "distributed inference systems"
+
+# ============================================================
+# 目标地区
+# ============================================================
+target_locations:
+  - United States
+  - Europe
+  - United Kingdom
+
+# ============================================================
+# 相关性阈值（0-10分，达到此分数才纳入推荐）
+# ============================================================
+relevance_threshold: 6
+
+# ============================================================
+# 通知设置
+# ============================================================
+notification:
+  notify_email: "${NOTIFY_EMAIL}"    # 通过 GitHub Secret 注入
+  digest_subject: "【博后每日推送】{date} 发现 {count} 个匹配岗位"
